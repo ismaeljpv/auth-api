@@ -1,0 +1,44 @@
+### Get User By ID
+GET http://localhost:8080/api/user/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2MzIwMDE5NTMsImlkIjoxLCJpc3MiOjEsInVzZXIiOiJpcEBnbWFpbC5jb20ifQ.56PmMayP4R8Kg18o5lDKHc_ngX3WADL4mFllIz_5CTc 
+
+### Create User 
+POST http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+  "firtsname": "Jhon",
+  "lastname": "Doe",
+  "email": "jdr@gmail.com",
+  "status": "ACTIVE",
+  "password": "12345678"
+}
+
+### Update User 
+PUT http://localhost:8080/api/user/3
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2MzIwMDEwNjIsImlkIjozLCJpc3MiOjMsInVzZXIiOiJqZHJAZ21haWwuY29tIn0.mDRXFTrqhddQGb_IPNxKEg-e42w2yBTWKNHVfDOBwgI
+
+{
+  "id": 3,
+  "firtsname": "Jhonathan",
+  "lastname": "Doe",
+  "email": "jde@gmail.com",
+  "status": "ACTIVE",
+  "password": "12345678"
+}
+
+### Delete User By ID
+DELETE http://localhost:8080/api/user/3
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2MzIwMDEwNjIsImlkIjozLCJpc3MiOjMsInVzZXIiOiJqZHJAZ21haWwuY29tIn0.mDRXFTrqhddQGb_IPNxKEg-e42w2yBTWKNHVfDOBwgI
+
+### Login Request
+POST http://localhost:8080/api/login
+Content-Type: application/json 
+
+{
+  "email": "ip@gmail.com",
+  "password": "12345678"
+}
