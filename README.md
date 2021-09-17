@@ -1,4 +1,4 @@
-# qa-api
+# auth-api
 Gokit Basic API with JWT Authentication
 
 The technologies implemented in this API are:
