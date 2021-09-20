@@ -1,5 +1,4 @@
 -- auth_api.users definition
-CREATE DATABASE `auth_api`;
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
@@ -12,3 +11,6 @@ CREATE TABLE `users` (
   `createdOn` mediumtext,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+
+INSERT INTO auth_api.users (firstname, lastname, email, password, status, createdOn) VALUES('Ismael', 'Pena', 'ip@gmail.com', '$2a$10$jR2qQUJx9b/CiC81KtPbXu5/1rwOA7AjQzTxDXNnzv4/IweV14mj6', 'ACTIVE', '1631906445');
+INSERT INTO auth_api.users (firstname, lastname, email, password, status, createdOn) VALUES('Cristian', 'Vargas', 'cjpv@gmail.com', '$2a$10$jR2qQUJx9b/CiC81KtPbXu5/1rwOA7AjQzTxDXNnzv4/IweV14mj6', 'ACTIVE', '1631906445');

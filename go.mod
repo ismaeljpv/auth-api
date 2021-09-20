@@ -20,5 +20,3 @@ require (
 	golang.org/x/sys v0.0.0-20210806184541-e5e7981a1069 // indirect
 	golang.org/x/text v0.3.6 // indirect
 )
-
-require github.com/gofrs/uuid v4.0.0+incompatible // indirect
